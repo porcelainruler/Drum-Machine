@@ -19,7 +19,20 @@ window.onload=function(){
     var XA=document.getElementById("XA");
     var CA=document.getElementById("CA");
 
-    var numpad=document.getElementById("drum-machine")
+    var QA1=document.getElementById("QA1");
+    var WA1=document.getElementById("WA1");
+    var EA1=document.getElementById("EA1");
+    var AA1=document.getElementById("AA1");
+    var SA1=document.getElementById("SA1");
+    var DA1=document.getElementById("DA1");
+    var ZA1=document.getElementById("ZA1");
+    var XA1=document.getElementById("XA1");
+    var CA1=document.getElementById("CA1");
+  
+
+
+    var power=document.getElementById("cmn-toggle-4");
+    var mode=document.getElementById("cmn-toggle-5")
 
     var display=document.getElementById("display");
     console.log('b');
@@ -28,36 +41,67 @@ window.onload=function(){
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 81) {
-            Q.classList.add("qact");
-            window.setTimeout(function(){
-               Q.classList.remove("qact"); 
-            },300);
-            Q.onclick();
-            console.log('Q');
+            console.log(power.checked);
+            if(!power.checked){
+                console.log("power off");
+                Q.classList.add("qdeact");
+                window.setTimeout(function(){
+                   Q.classList.remove("qdeact"); 
+                },300);
+            }else{
+                Q.classList.add("qact");
+                window.setTimeout(function(){
+                    Q.classList.remove("qact"); 
+                },300);
+                Q.onclick();
+                console.log('Q');
+            }
         }
     });
 
 
     Q.onclick=function (){
-        QA.play();
+        if(!mode.checked){
+            QA.play();
+            display.innerText="Fizz";
+            console.log("mode off");
+        }else{
+            QA1.play();
+            console.log("mode on");
+        }
         console.log('Q');
     }
 
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 87) {
-            W.classList.add("wact");
-            window.setTimeout(function(){
-               W.classList.remove("wact"); 
-            },300);
-            W.onclick();
-            console.log('W');
+            if(!power.checked){
+                console.log("power off");
+                W.classList.add("wdeact");
+                window.setTimeout(function(){
+                   W.classList.remove("wdeact"); 
+                },300);
+            }else{
+                W.classList.add("wact");
+                window.setTimeout(function(){
+                    W.classList.remove("wact"); 
+                },300);
+                W.onclick();
+                console.log('W');
+            }
         }
     });
 
 
     W.onclick=function (){
-        WA.play();
+        if(!mode.checked){
+            WA.play();
+            display.innerText="Buzz";
+            console.log("mode off");
+        }else{
+            WA1.play();
+            console.log("mode on");
+        }
         console.log('W');
     }
 
@@ -65,18 +109,32 @@ window.onload=function(){
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 69) {
-            E.classList.add("eact");
-            window.setTimeout(function(){
-               E.classList.remove("eact"); 
-            },300);
-            E.onclick();
-            console.log('E');
+            if(!power.checked){
+                console.log("power off");
+                E.classList.add("edeact");
+                window.setTimeout(function(){
+                   E.classList.remove("edeact"); 
+                },300);
+            }else{
+                E.classList.add("eact");
+                window.setTimeout(function(){
+                    E.classList.remove("eact"); 
+                },300);
+                E.onclick();
+                console.log('E');
+            }
         }
     });
 
 
     E.onclick=function qclick (){
-        EA.play();
+        if(!mode.checked){
+            EA.play();
+            console.log("mode off");
+        }else{
+            EA1.play();
+            console.log("mode on");
+        }
         console.log('E');
     }
     
@@ -84,108 +142,192 @@ window.onload=function(){
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 65) {
-            A.classList.add("aact");
-            window.setTimeout(function(){
-               A.classList.remove("aact"); 
-            },300);
-            A.onclick();
-            console.log('A');
+            if(!power.checked){
+                console.log("power off");
+                A.classList.add("adeact");
+                window.setTimeout(function(){
+                   A.classList.remove("adeact"); 
+                },300);
+            }else{
+                A.classList.add("aact");
+                window.setTimeout(function(){
+                    A.classList.remove("aact"); 
+                },300);
+                A.onclick();
+                console.log('A');
+            }
         }
     });
 
 
     A.onclick=function qclick (){
-        EA.play();
+        if(!mode.checked){
+            AA.play();
+            console.log("mode off");
+        }else{
+            AA1.play();
+            console.log("mode on");
+        }
         console.log('A');
     }
 
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 83) {
-            S.classList.add("sact");
-            window.setTimeout(function(){
-               S.classList.remove("sact"); 
-            },300);
-            S.onclick();
-            console.log('S');
+            if(!power.checked){
+                console.log("power off");
+                S.classList.add("sdeact");
+                window.setTimeout(function(){
+                   S.classList.remove("sdeact"); 
+                },300);
+            }else{
+                S.classList.add("sact");
+                window.setTimeout(function(){
+                    S.classList.remove("sact"); 
+                },300);
+                S.onclick();
+                console.log('S');
+            }
         }
     });
 
 
     S.onclick=function qclick (){
-        SA.play();
+        if(!mode.checked){
+            SA.play();
+            console.log("mode off");
+        }else{
+            SA1.play();
+            console.log("mode on");
+        }
         console.log('S');
     }
 
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 68) {
-            D.classList.add("dact");
-            window.setTimeout(function(){
-               D.classList.remove("dact"); 
-            },300);
-            D.onclick();
-            console.log('D');
+            if(!power.checked){
+                console.log("power off");
+                D.classList.add("ddeact");
+                window.setTimeout(function(){
+                   D.classList.remove("ddeact"); 
+                },300);
+            }else{
+                D.classList.add("dact");
+                window.setTimeout(function(){
+                    D.classList.remove("dact"); 
+                },300);
+                D.onclick();
+                console.log('D');
+            }
         }
     });
 
 
     D.onclick=function qclick (){
-        DA.play();
+        if(!mode.checked){
+            DA.play();
+            console.log("mode off");
+        }else{
+            DA1.play();
+            console.log("mode on");
+        }
         console.log('D');
     }
 
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 90) {
-            Z.classList.add("zact");
-            window.setTimeout(function(){
-               Z.classList.remove("zact"); 
-            },300);
-            Z.onclick();
-            console.log('Z');
+            if(!power.checked){
+                console.log("power off");
+                Z.classList.add("zdeact");
+                window.setTimeout(function(){
+                   Z.classList.remove("zdeact"); 
+                },300);
+            }else{
+                Z.classList.add("zact");
+                window.setTimeout(function(){
+                    Z.classList.remove("zact"); 
+                },300);
+                Z.onclick();
+                console.log('Z');
+            }
         }
     });
 
 
     Z.onclick=function qclick (){
-        ZA.play();
+        if(!mode.checked){
+            ZA.play();
+            console.log("mode off");
+        }else{
+            ZA1.play();
+            console.log("mode on");
+        }
         console.log('Z');
     }
 
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 88) {
-            X.classList.add("xact");
-            window.setTimeout(function(){
-               X.classList.remove("xact"); 
-            },300);
-            X.onclick();
-            console.log('X');
+            if(!power.checked){
+                console.log("power off");
+                X.classList.add("xdeact");
+                window.setTimeout(function(){
+                   X.classList.remove("xdeact"); 
+                },300);
+            }else{
+                X.classList.add("xact");
+                window.setTimeout(function(){
+                    X.classList.remove("xact"); 
+                },300);
+                X.onclick();
+                console.log('X');
+            }
         }
     });
 
 
     X.onclick=function qclick (){
-        XA.play();
+        if(!mode.checked){
+            XA.play();
+            console.log("mode off");
+        }else{
+            XA1.play();
+            console.log("mode on");
+        }
         console.log('X');
     }
 
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 67) {
-            C.classList.add("cact");
-            window.setTimeout(function(){
-               C.classList.remove("cact"); 
-            },300);
-            C.onclick();
-            console.log('C');
+            if(!power.checked){
+                console.log("power off");
+                C.classList.add("cdeact");
+                window.setTimeout(function(){
+                   C.classList.remove("cdeact"); 
+                },300);
+            }else{
+                C.classList.add("cact");
+                window.setTimeout(function(){
+                    C.classList.remove("cact"); 
+                },300);
+                C.onclick();
+                console.log('C');
+            }
         }
     });
 
 
     C.onclick=function qclick (){
-        CA.play();
+        if(!mode.checked){
+            CA.play();
+            console.log("mode off");
+        }else{
+            CA1.play();
+            console.log("mode on");
+        }
         console.log('C');
     }
 

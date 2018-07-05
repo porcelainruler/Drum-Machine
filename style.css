@@ -36,6 +36,7 @@ audio{
     border-radius: 5px;
 }
 
+
 .screen{
     height: 240px;
     width: 210px;
@@ -57,8 +58,12 @@ audio{
     vertical-align: middle;
     line-height: 30px;
     height: 30px;
-    font-family: sans-serif;
-    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(80, 6, 37);
+    background-color: orange;
+    box-shadow: 5px 5px rgb(1, 7, 92);    
+
 }
 
 .power{
@@ -70,7 +75,13 @@ audio{
 
 #display{
     width: 190px;
-    height: 20px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    box-shadow: 5px 5px darkmagenta;    
     background-color: aliceblue;
 
 }
@@ -128,6 +139,11 @@ audio{
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
+.qdeact{
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #W:active{
     background-color: indigo;
     transform: translate(4px,4px);
@@ -137,6 +153,11 @@ audio{
 
 .wact{
     background-color: indigo;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
+.wdeact{
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
@@ -154,6 +175,11 @@ audio{
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
+.edeact{
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #A:active{
     background-color: green;
     transform: translate(4px,4px);
@@ -163,6 +189,11 @@ audio{
 
 .aact{
     background-color: green;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
+.adeact{
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
@@ -180,6 +211,11 @@ audio{
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
+.sdeact{
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #D:active{
     background-color: yellow;
     transform: translate(4px,4px);
@@ -189,6 +225,11 @@ audio{
 
 .dact{
     background-color: yellow;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
+.ddeact{
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
@@ -206,6 +247,11 @@ audio{
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
+.zdeact{
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #X:active{
     background-color: orangered;
     transform: translate(4px,4px);
@@ -219,6 +265,11 @@ audio{
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
+.xdeact{
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #C:active{
     background-color: red;
     transform: translate(4px,4px);
@@ -228,6 +279,11 @@ audio{
 
 .cact{
     background-color: red;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
+.cdeact{
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
