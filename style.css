@@ -5,6 +5,11 @@ html{
 body{
     height: 100%;
 }
+
+audio{
+    display: none;
+}
+
 .mainbox{
     height: 100%;
     width: 100%;
@@ -117,11 +122,23 @@ body{
 
 }
 
+.qact{
+    background-color: violet;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #W:active{
     background-color: indigo;
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 
+}
+
+.wact{
+    background-color: indigo;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
 #E:active{
@@ -131,11 +148,23 @@ body{
 
 }
 
+.eact{
+    background-color: blue;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #A:active{
     background-color: green;
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 
+}
+
+.aact{
+    background-color: green;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
 #S:active{
@@ -145,11 +174,23 @@ body{
 
 }
 
+.sact{
+    background-color: greenyellow;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #D:active{
     background-color: yellow;
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 
+}
+
+.dact{
+    background-color: yellow;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
 #Z:active{
@@ -159,6 +200,12 @@ body{
 
 }
 
+.zact{
+    background-color: orange;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #X:active{
     background-color: orangered;
     transform: translate(4px,4px);
@@ -166,11 +213,23 @@ body{
 
 }
 
+.xact{
+    background-color: orangered;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
+}
+
 #C:active{
     background-color: red;
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 
+}
+
+.cact{
+    background-color: red;
+    transform: translate(4px,4px);
+    box-shadow: 0px 0px 1px rgb(104, 0, 5);
 }
 
 @media(max-width:815px){
