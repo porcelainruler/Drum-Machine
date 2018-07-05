@@ -22,6 +22,7 @@ audio{
 }
 .containercss{
     height: 300px;
+    min-height: 250px;
     width: 750px;
     margin-left: auto;
     margin-right: auto;  
@@ -307,6 +308,7 @@ audio{
         min-width: 522px;
         width: 80%;
         height: 80%;
+        min-height: 560px;
         justify-content: space-evenly;
     }
 
@@ -340,6 +342,7 @@ audio{
         flex-direction: column;
         width: 70%;
         height: 80%;
+        min-height: 560px;
         min-width: 240px;
         justify-content: space-evenly;
         margin-left: auto;
