@@ -67,6 +67,7 @@ window.onload=function(){
             console.log("mode off");
         }else{
             QA1.play();
+            display.innerText="Pianno-1";
             console.log("mode on");
         }
         console.log('Q');
@@ -100,6 +101,7 @@ window.onload=function(){
             console.log("mode off");
         }else{
             WA1.play();
+            display.innerText="Pianno-2";
             console.log("mode on");
         }
         console.log('W');
@@ -130,9 +132,11 @@ window.onload=function(){
     E.onclick=function qclick (){
         if(!mode.checked){
             EA.play();
+            display.innerText="Pop";
             console.log("mode off");
         }else{
             EA1.play();
+            display.innerText="Pianno-3";
             console.log("mode on");
         }
         console.log('E');
@@ -163,9 +167,11 @@ window.onload=function(){
     A.onclick=function qclick (){
         if(!mode.checked){
             AA.play();
+            display.innerText="Clap";
             console.log("mode off");
         }else{
             AA1.play();
+            display.innerText="Side-Kick";
             console.log("mode on");
         }
         console.log('A');
@@ -195,9 +201,11 @@ window.onload=function(){
     S.onclick=function qclick (){
         if(!mode.checked){
             SA.play();
+            display.innerText="Heat-1";
             console.log("mode off");
         }else{
             SA1.play();
+            display.innerText="Header";
             console.log("mode on");
         }
         console.log('S');
@@ -227,9 +235,11 @@ window.onload=function(){
     D.onclick=function qclick (){
         if(!mode.checked){
             DA.play();
+            display.innerText="Heat-2";
             console.log("mode off");
         }else{
             DA1.play();
+            display.innerText="Fizz-Buzz";
             console.log("mode on");
         }
         console.log('D');
@@ -259,9 +269,11 @@ window.onload=function(){
     Z.onclick=function qclick (){
         if(!mode.checked){
             ZA.play();
+            display.innerText="Heat-3";
             console.log("mode off");
         }else{
             ZA1.play();
+            display.innerText="Rock-N-Roll";
             console.log("mode on");
         }
         console.log('Z');
@@ -291,9 +303,11 @@ window.onload=function(){
     X.onclick=function qclick (){
         if(!mode.checked){
             XA.play();
+            display.innerText="Drum";
             console.log("mode off");
         }else{
             XA1.play();
+            display.innerText="Finisher";
             console.log("mode on");
         }
         console.log('X');
@@ -323,6 +337,7 @@ window.onload=function(){
     C.onclick=function qclick (){
         if(!mode.checked){
             CA.play();
+            display.innerText="Closure";
             console.log("mode off");
         }else{
             CA1.play();
