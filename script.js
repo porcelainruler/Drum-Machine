@@ -15,7 +15,7 @@ window.onload=function(){
     var AA=document.getElementById("AA");
     var SA=document.getElementById("SA");
     var DA=document.getElementById("DA");
-    var ZA=document.getElementById("ZA");
+    var ZA=document.getElementById("ZA"); 
     var XA=document.getElementById("XA");
     var CA=document.getElementById("CA");
 
@@ -61,11 +61,11 @@ window.onload=function(){
 
 
     Q.onclick=function (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             QA.play();
             display.innerText="Fizz";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             QA1.play();
             display.innerText="Pianno-1";
             console.log("mode on");
@@ -95,11 +95,11 @@ window.onload=function(){
 
 
     W.onclick=function (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             WA.play();
             display.innerText="Buzz";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             WA1.play();
             display.innerText="Pianno-2";
             console.log("mode on");
@@ -130,11 +130,11 @@ window.onload=function(){
 
 
     E.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             EA.play();
             display.innerText="Pop";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             EA1.play();
             display.innerText="Pianno-3";
             console.log("mode on");
@@ -165,11 +165,11 @@ window.onload=function(){
 
 
     A.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             AA.play();
             display.innerText="Clap";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             AA1.play();
             display.innerText="Side-Kick";
             console.log("mode on");
@@ -199,11 +199,11 @@ window.onload=function(){
 
 
     S.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             SA.play();
             display.innerText="Heat-1";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             SA1.play();
             display.innerText="Header";
             console.log("mode on");
@@ -233,11 +233,11 @@ window.onload=function(){
 
 
     D.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             DA.play();
             display.innerText="Heat-2";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             DA1.play();
             display.innerText="Fizz-Buzz";
             console.log("mode on");
@@ -267,11 +267,11 @@ window.onload=function(){
 
 
     Z.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             ZA.play();
             display.innerText="Heat-3";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             ZA1.play();
             display.innerText="Rock-N-Roll";
             console.log("mode on");
@@ -301,11 +301,11 @@ window.onload=function(){
 
 
     X.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             XA.play();
             display.innerText="Drum";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             XA1.play();
             display.innerText="Finisher";
             console.log("mode on");
@@ -335,12 +335,13 @@ window.onload=function(){
 
 
     C.onclick=function qclick (){
-        if(!mode.checked){
+        if(!mode.checked && power.checked){
             CA.play();
             display.innerText="Closure";
             console.log("mode off");
-        }else{
+        }else if(mode.checked && power.checked){
             CA1.play();
+            display.innerText="Bang";
             console.log("mode on");
         }
         console.log('C');

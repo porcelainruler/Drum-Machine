@@ -127,12 +127,12 @@ audio{
 
 }
 
-#Q:active{
+/*#Q:active{
     background-color: violet;
     transform: translate(4px,4px);
     box-shadow: 0px 0px 1px rgb(104, 0, 5);
 
-}
+}*/
 
 .qact{
     background-color: violet;
