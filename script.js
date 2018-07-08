@@ -1,23 +1,23 @@
 window.onload=function(){
-    var Q=document.getElementById("Q");
-    var W=document.getElementById("W");
-    var E=document.getElementById("E");
-    var A=document.getElementById("A");
-    var S=document.getElementById("S");
-    var D=document.getElementById("D");
-    var Z=document.getElementById("Z");
-    var X=document.getElementById("X");
-    var C=document.getElementById("C");
-
     var QA=document.getElementById("QA");
     var WA=document.getElementById("WA");
     var EA=document.getElementById("EA");
     var AA=document.getElementById("AA");
     var SA=document.getElementById("SA");
     var DA=document.getElementById("DA");
-    var ZA=document.getElementById("ZA"); 
+    var ZA=document.getElementById("ZA");
     var XA=document.getElementById("XA");
     var CA=document.getElementById("CA");
+
+    var Q=document.getElementById("Q");
+    var W=document.getElementById("W");
+    var E=document.getElementById("E");
+    var A=document.getElementById("A");
+    var S=document.getElementById("S");
+    var D=document.getElementById("D");
+    var Z=document.getElementById("Z"); 
+    var X=document.getElementById("X");
+    var C=document.getElementById("C");
 
     var QA1=document.getElementById("QA1");
     var WA1=document.getElementById("WA1");
@@ -34,6 +34,8 @@ window.onload=function(){
     var power=document.getElementById("cmn-toggle-4");
     var mode=document.getElementById("cmn-toggle-5")
 
+    power.checked=true;
+
     var display=document.getElementById("display");
     console.log('b');
 
@@ -44,25 +46,25 @@ window.onload=function(){
             console.log(power.checked);
             if(!power.checked){
                 console.log("power off");
-                Q.classList.add("qdeact");
+                QA.classList.add("qdeact");
                 window.setTimeout(function(){
-                   Q.classList.remove("qdeact"); 
+                   QA.classList.remove("qdeact"); 
                 },300);
             }else{
-                Q.classList.add("qact");
+                QA.classList.add("qact");
                 window.setTimeout(function(){
-                    Q.classList.remove("qact"); 
+                    QA.classList.remove("qact"); 
                 },300);
-                Q.onclick();
-                console.log('Q');
+                QA.onclick();
+                console.log('QA');
             }
         }
     });
 
 
-    Q.onclick=function (){
+    QA.onclick=function (){
         if(!mode.checked && power.checked){
-            QA.play();
+            Q.play();
             display.innerText="Fizz";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -70,7 +72,7 @@ window.onload=function(){
             display.innerText="Pianno-1";
             console.log("mode on");
         }
-        console.log('Q');
+        console.log('QA');
     }
 
     document.addEventListener("keyup", function(event) {
@@ -78,25 +80,25 @@ window.onload=function(){
         if (event.keyCode === 87) {
             if(!power.checked){
                 console.log("power off");
-                W.classList.add("wdeact");
+                WA.classList.add("wdeact");
                 window.setTimeout(function(){
-                   W.classList.remove("wdeact"); 
+                   WA.classList.remove("wdeact"); 
                 },300);
             }else{
-                W.classList.add("wact");
+                WA.classList.add("wact");
                 window.setTimeout(function(){
-                    W.classList.remove("wact"); 
+                    WA.classList.remove("wact"); 
                 },300);
-                W.onclick();
-                console.log('W');
+                WA.onclick();
+                console.log('WA');
             }
         }
     });
 
 
-    W.onclick=function (){
+    WA.onclick=function (){
         if(!mode.checked && power.checked){
-            WA.play();
+            W.play();
             display.innerText="Buzz";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -104,7 +106,7 @@ window.onload=function(){
             display.innerText="Pianno-2";
             console.log("mode on");
         }
-        console.log('W');
+        console.log('WA');
     }
 
 
@@ -113,25 +115,25 @@ window.onload=function(){
         if (event.keyCode === 69) {
             if(!power.checked){
                 console.log("power off");
-                E.classList.add("edeact");
+                EA.classList.add("edeact");
                 window.setTimeout(function(){
-                   E.classList.remove("edeact"); 
+                   EA.classList.remove("edeact"); 
                 },300);
             }else{
-                E.classList.add("eact");
+                EA.classList.add("eact");
                 window.setTimeout(function(){
-                    E.classList.remove("eact"); 
+                    EA.classList.remove("eact"); 
                 },300);
-                E.onclick();
-                console.log('E');
+                EA.onclick();
+                console.log('EA');
             }
         }
     });
 
 
-    E.onclick=function qclick (){
+    EA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            EA.play();
+            E.play();
             display.innerText="Pop";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -139,7 +141,7 @@ window.onload=function(){
             display.innerText="Pianno-3";
             console.log("mode on");
         }
-        console.log('E');
+        console.log('EA');
     }
     
 
@@ -148,25 +150,25 @@ window.onload=function(){
         if (event.keyCode === 65) {
             if(!power.checked){
                 console.log("power off");
-                A.classList.add("adeact");
+                AA.classList.add("adeact");
                 window.setTimeout(function(){
-                   A.classList.remove("adeact"); 
+                   AA.classList.remove("adeact"); 
                 },300);
             }else{
-                A.classList.add("aact");
+                AA.classList.add("aact");
                 window.setTimeout(function(){
-                    A.classList.remove("aact"); 
+                    AA.classList.remove("aact"); 
                 },300);
-                A.onclick();
-                console.log('A');
+                AA.onclick();
+                console.log('AA');
             }
         }
     });
 
 
-    A.onclick=function qclick (){
+    AA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            AA.play();
+            A.play();
             display.innerText="Clap";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -174,7 +176,7 @@ window.onload=function(){
             display.innerText="Side-Kick";
             console.log("mode on");
         }
-        console.log('A');
+        console.log('AA');
     }
 
     document.addEventListener("keyup", function(event) {
@@ -182,25 +184,25 @@ window.onload=function(){
         if (event.keyCode === 83) {
             if(!power.checked){
                 console.log("power off");
-                S.classList.add("sdeact");
+                SA.classList.add("sdeact");
                 window.setTimeout(function(){
-                   S.classList.remove("sdeact"); 
+                   SA.classList.remove("sdeact"); 
                 },300);
             }else{
-                S.classList.add("sact");
+                SA.classList.add("sact");
                 window.setTimeout(function(){
-                    S.classList.remove("sact"); 
+                    SA.classList.remove("sact"); 
                 },300);
-                S.onclick();
-                console.log('S');
+                SA.onclick();
+                console.log('SA');
             }
         }
     });
 
 
-    S.onclick=function qclick (){
+    SA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            SA.play();
+            S.play();
             display.innerText="Heat-1";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -208,7 +210,7 @@ window.onload=function(){
             display.innerText="Header";
             console.log("mode on");
         }
-        console.log('S');
+        console.log('SA');
     }
 
     document.addEventListener("keyup", function(event) {
@@ -216,25 +218,25 @@ window.onload=function(){
         if (event.keyCode === 68) {
             if(!power.checked){
                 console.log("power off");
-                D.classList.add("ddeact");
+                DA.classList.add("ddeact");
                 window.setTimeout(function(){
-                   D.classList.remove("ddeact"); 
+                   DA.classList.remove("ddeact"); 
                 },300);
             }else{
-                D.classList.add("dact");
+                DA.classList.add("dact");
                 window.setTimeout(function(){
-                    D.classList.remove("dact"); 
+                    DA.classList.remove("dact"); 
                 },300);
-                D.onclick();
-                console.log('D');
+                DA.onclick();
+                console.log('DA');
             }
         }
     });
 
 
-    D.onclick=function qclick (){
+    DA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            DA.play();
+            D.play();
             display.innerText="Heat-2";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -242,7 +244,7 @@ window.onload=function(){
             display.innerText="Fizz-Buzz";
             console.log("mode on");
         }
-        console.log('D');
+        console.log('DA');
     }
 
     document.addEventListener("keyup", function(event) {
@@ -250,25 +252,25 @@ window.onload=function(){
         if (event.keyCode === 90) {
             if(!power.checked){
                 console.log("power off");
-                Z.classList.add("zdeact");
+                ZA.classList.add("zdeact");
                 window.setTimeout(function(){
-                   Z.classList.remove("zdeact"); 
+                   ZA.classList.remove("zdeact"); 
                 },300);
             }else{
-                Z.classList.add("zact");
+                ZA.classList.add("zact");
                 window.setTimeout(function(){
-                    Z.classList.remove("zact"); 
+                    ZA.classList.remove("zact"); 
                 },300);
-                Z.onclick();
-                console.log('Z');
+                ZA.onclick();
+                console.log('ZA');
             }
         }
     });
 
 
-    Z.onclick=function qclick (){
+    ZA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            ZA.play();
+            Z.play();
             display.innerText="Heat-3";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -276,7 +278,7 @@ window.onload=function(){
             display.innerText="Rock-N-Roll";
             console.log("mode on");
         }
-        console.log('Z');
+        console.log('ZA');
     }
 
     document.addEventListener("keyup", function(event) {
@@ -284,25 +286,25 @@ window.onload=function(){
         if (event.keyCode === 88) {
             if(!power.checked){
                 console.log("power off");
-                X.classList.add("xdeact");
+                XA.classList.add("xdeact");
                 window.setTimeout(function(){
-                   X.classList.remove("xdeact"); 
+                   XA.classList.remove("xdeact"); 
                 },300);
             }else{
-                X.classList.add("xact");
+                XA.classList.add("xact");
                 window.setTimeout(function(){
-                    X.classList.remove("xact"); 
+                    XA.classList.remove("xact"); 
                 },300);
-                X.onclick();
-                console.log('X');
+                XA.onclick();
+                console.log('XA');
             }
         }
     });
 
 
-    X.onclick=function qclick (){
+    XA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            XA.play();
+            X.play();
             display.innerText="Drum";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -310,7 +312,7 @@ window.onload=function(){
             display.innerText="Finisher";
             console.log("mode on");
         }
-        console.log('X');
+        console.log('XA');
     }
 
     document.addEventListener("keyup", function(event) {
@@ -318,25 +320,25 @@ window.onload=function(){
         if (event.keyCode === 67) {
             if(!power.checked){
                 console.log("power off");
-                C.classList.add("cdeact");
+                CA.classList.add("cdeact");
                 window.setTimeout(function(){
-                   C.classList.remove("cdeact"); 
+                   CA.classList.remove("cdeact"); 
                 },300);
             }else{
-                C.classList.add("cact");
+                CA.classList.add("cact");
                 window.setTimeout(function(){
-                    C.classList.remove("cact"); 
+                    CA.classList.remove("cact"); 
                 },300);
-                C.onclick();
-                console.log('C');
+                CA.onclick();
+                console.log('CA');
             }
         }
     });
 
 
-    C.onclick=function qclick (){
+    CA.onclick=function qclick (){
         if(!mode.checked && power.checked){
-            CA.play();
+            C.play();
             display.innerText="Closure";
             console.log("mode off");
         }else if(mode.checked && power.checked){
@@ -344,7 +346,7 @@ window.onload=function(){
             display.innerText="Bang";
             console.log("mode on");
         }
-        console.log('C');
+        console.log('CA');
     }
 
     
